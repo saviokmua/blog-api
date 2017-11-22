@@ -6,12 +6,13 @@ git_source(:github) do |repo_name|
 end
 
 
-
-gem 'rails', '~> 5.1.4'
-gem 'puma', '~> 3.7'
+gem 'faker'
+gem 'jbuilder'
 gem 'pg'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.5'
+gem 'puma', '~> 3.7'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'rails', '~> 5.1.4'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -20,8 +21,7 @@ gem 'pg'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
